@@ -15,7 +15,7 @@ pipeline{
 			steps{
 				sh 'gradle test'}}
 		stage('Run application'){
-			steps{ sh 'gradle run')}}
+			steps{ sh 'gradle run' }}
 		}
 	post{
 		success{ echo 'Build and deployment successfull'}
